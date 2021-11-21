@@ -16,3 +16,10 @@ length(null_vector)
 is.na(null_vector)
 help(is.na)
 
+## Ctrl+L clears the console
+
+mylist <- list(1, "a", TRUE)
+mylist2 <- list(c(1, 2, 3), c("a", "b", "c"), c(TRUE, FALSE, TRUE))
+mylist3 <- list(list(1, "a", TRUE), list(2, "b", FALSE), list(3, "c", TRUE))
+print(mylist2)
+
