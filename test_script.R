@@ -23,3 +23,29 @@ mylist2 <- list(c(1, 2, 3), c("a", "b", "c"), c(TRUE, FALSE, TRUE))
 mylist3 <- list(list(1, "a", TRUE), list(2, "b", FALSE), list(3, "c", TRUE))
 print(mylist2)
 
+##Matrix
+
+mat1 <- matrix(data = c(1, 2, 3, 4), nrow = 2, byrow = T)
+mat2 <- matrix(data = c("a", "b", "c"), nrow = 1, byrow = TRUE)
+
+mean(mat1[2,])
+mean(mat1[,2])
+
+##FACTORS
+
+my_data <- c("Male", "Female", "Male", "Female")
+as.factor(my_data)
+class(my_data)
+print(my_data)
+
+vector_status <- c("Poor", "Poor", "Imporved", "Excelent", "Excellent", "Poor")
+vector_status1 <- factor(vector_status, ordered=TRUE, levels = c("Poor", "Improved", "Excellent"))
+print(vector_status1)
+
+
+##DATA FRAME
+
+df <- data.frame(Name = c("Ram", "Shyam"), Age = c(32, 45))
+print(df)
+age <- df$Age
+age
