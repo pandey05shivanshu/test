@@ -43,9 +43,43 @@ vector_status1 <- factor(vector_status, ordered=TRUE, levels = c("Poor", "Improv
 print(vector_status1)
 
 
-##DATA FRAME
+##DATA FRAME AND INTEGRITY
 
 df <- data.frame(Name = c("Ram", "Shyam"), Age = c(32, 45))
 print(df)
 age <- df$Age
 age
+
+df <- data.frame(Name = c("Ram", "Shyam", "Anu"), Age = c(32, 45, 65), SalaryEmployee = c(1000, 2000, 3000))
+print(df)
+
+Salary_Employee <- df$SalaryEmployee
+Salary_Employee
+
+df[, 3]
+df[1, ]
+df[1, 3]
+
+## DECISION MAKING STATEMENTS
+
+if (10 > 20) {
+  print("10 is more than 20")
+} else {
+  print("10 is not more than 20")
+}
+
+v1 <- c(1:10)
+print(v1)
+
+for (i in c(1:length(v1))) {
+  v1[i] = v1[i]*2
+}
+print(v1)
+
+
+sample(1:100, 4)
+
+gender <- c("Male", "Female", "Male", "Female","Male", "Female","Male", "Female", "Sym")
+
+##Summarized Table
+table(gender)
